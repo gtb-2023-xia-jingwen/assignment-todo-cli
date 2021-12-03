@@ -162,7 +162,7 @@ PS: 更多关于个人时间管理、任务管理的推荐内容有 [番茄工�
 1. 使用 Git 进行版本管理：
    1. 小步提交；
    2. 使用合理的 commit message；
-   3. Commit message 格式需符合 [Conventional Commits](https://www.conventionalcommits.org/)；
+   3. Commit message 格式需符合 [Conventional Commits](https://www.conventionalcommits.org/) ；
 1. 以下使用场景，它们不在目标考查范围内，你无需为它们做特别处理：
    1. 并发的使用场景，换言之，就是无需考虑是否有多个使用者和（/或）多处在同时运行某个 todo command；
    1. 不必为可创建的任务数量的上限做任何处理，即可以支持无限多的任务，直到 系统/机器 挂掉为止；（我们目前不会这样去 使用/测试 它）
