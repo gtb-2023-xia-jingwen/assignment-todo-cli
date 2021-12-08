@@ -26,7 +26,7 @@ PS: 更多关于个人时间管理、任务管理的推荐内容有 [番茄工�
 
 ![image.png](./assets/1636273900179-image.png)
 
-如用户忘记在第一次使用前运行该命令，则提示用户`Please run 'todo init' before running '<command-name>' command'.`。
+如用户忘记在第一次使用前运行该命令，则提示用户`Please run 'todo init' before running '<command-name>' command.`。
 
 ![image-20211111223300921](assets/image-20211111223300921.png)
 
