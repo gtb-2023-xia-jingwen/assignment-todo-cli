@@ -130,7 +130,7 @@ PS: 更多关于个人时间管理、任务管理的推荐内容有 [番茄工�
 
 ### Unknown command
 
-如果输入的命令不支持，比如`todo foobar`，则提示用户`Unknown command: foobar!`，示例如下图：
+如果输入的命令不支持，比如`todo foobar`，则提示用户`Unknown command: 'foobar'!`，示例如下图：
 
 ![image-20211111154110307](assets/image-20211111154110307.png)
 
