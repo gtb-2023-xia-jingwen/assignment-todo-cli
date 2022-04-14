@@ -8,7 +8,7 @@
 
 PS: 更多关于个人时间管理、任务管理的推荐内容有 [番茄工作法](https://www.zhihu.com/question/20189826 "强烈推荐阅读《番茄工作图解法》一书") 、[GTD](https://www.bilibili.com/video/BV1wE411176Q) 、 [时间管理四象限](https://www.yinxiang.com/everhub/note/0100b778-34c3-406d-8280-f0e557897945) 。
 
-类似 `git` 命令自身还提供了其它 child commands，以完成各自相对应的针对性的操作。我们的 `todo` 命令也支持多个 child commands，如：`list`、`add`、`mark`等，具体内容详见后文。
+类似于 `git` 命令自身还提供了其它 child commands（status、commit、log）以完成相对应的操作一样。我们的 `todo` 命令也支持多个 child commands，如：`list`、`add`、`mark`等，具体内容详见后文。
 
 ## 需求说明
 
