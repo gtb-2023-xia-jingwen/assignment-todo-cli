@@ -25,3 +25,9 @@ if [[ $1 == 'list' ]]; then
   echo "# Completed"
   (cat $TASK_FILE | grep -E '^x[1-9]+ ' || echo "Empty") | sed -E 's/x//'
 fi
+
+if [[ $1 == 'add' ]]; then
+  shift
+  LAST_TASK_NUM=$(wc -l $TASK_FILE | cut -d' ' -f1)
+  echo "$(($LAST_TASK_NUM + 1)) $@" >> $TASK_FILE
+fi
