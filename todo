@@ -31,3 +31,9 @@ if [[ $1 == 'add' ]]; then
   LAST_TASK_NUM=$(wc -l $TASK_FILE | cut -d' ' -f1)
   echo "$(($LAST_TASK_NUM + 1)) $@" >> $TASK_FILE
 fi
+
+if [[ $1 == 'mark' ]]; then
+  shift
+  del_task=$(echo $@ | sed -E 's/ /|/g')
+  sed -i -E "s/^($del_task) /x&/" $TASK_FILE
+fi
