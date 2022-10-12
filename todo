@@ -8,7 +8,7 @@ if [[ $1 == 'init' ]]; then
       mkdir $TASK_ROOT
   fi
   if [[ ! -f $TASK_FILE ]]; then
-      mkdir $TASK_FILE
+      touch $TASK_FILE
   fi
   echo "Initialized successfully."
 fi
