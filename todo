@@ -3,6 +3,11 @@
 declare -r TASK_ROOT=$HOME/.todo/
 declare -r TASK_FILE=$HOME/.todo/tasks
 
+if [[ $# == 0 ]]; then
+  echo "Please run 'todo init|list|add|mark' command"
+  exit 1
+fi
+
 if [[ $1 == 'init' ]]; then
   if [[ ! -d $TASK_ROOT ]]; then
       mkdir $TASK_ROOT
