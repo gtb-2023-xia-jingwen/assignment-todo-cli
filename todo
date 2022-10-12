@@ -17,3 +17,11 @@ if [[ ! -f $TASK_FILE ]]; then
   echo "Please run 'todo init' before running '<$1>' command."
   exit 1
 fi
+
+# task format: TBD 1 download paper ; DONE x2 buy pencil
+if [[ $1 == 'list' ]]; then
+  echo "# To be done"
+  cat $TASK_FILE | grep -E '^[1-9]+ ' || echo "Empty"
+  echo "# Completed"
+  (cat $TASK_FILE | grep -E '^x[1-9]+ ' || echo "Empty") | sed -E 's/x//'
+fi
