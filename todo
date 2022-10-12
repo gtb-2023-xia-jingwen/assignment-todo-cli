@@ -1,2 +1,14 @@
 #!/usr/bin/env bash
 
+declare -r TASK_ROOT=$HOME/.todo/
+declare -r TASK_FILE=$HOME/.todo/tasks
+
+if [[ $1 == 'init' ]]; then
+  if [[ ! -d $TASK_ROOT ]]; then
+      mkdir $TASK_ROOT
+  fi
+  if [[ ! -f $TASK_FILE ]]; then
+      mkdir $TASK_FILE
+  fi
+  echo "Initialized successfully."
+fi
