@@ -3,8 +3,8 @@
 declare -r TASK_ROOT=$HOME/.todo/
 declare -r TASK_FILE=$HOME/.todo/tasks
 
-if [[ $# == 0 ]]; then
-  echo "Please run 'todo init|list|add|mark' command"
+if [[ $# == 0 || ! $1 =~ init|list|add|mark ]]; then
+  echo "Please run 'todo init|list|add|mark' command."
   exit 1
 fi
 
