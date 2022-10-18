@@ -19,7 +19,7 @@ if [[ $1 == 'init' ]]; then
 fi
 
 if [[ ! -f $TASK_FILE ]]; then
-  echo "Please run 'todo init' before running '<$1>' command."
+  echo "Please run 'todo init' before running '$1' command."
   exit 1
 fi
 
